@@ -1,4 +1,4 @@
-﻿namespace DoubleList
+﻿namespace DoubleList;
 
     public class DoubleNode<T>
 {
@@ -8,9 +8,9 @@
         Prev = null;
         Next = null;
     }
-    public DoubleNode<T> Prev { get; set; }
+    public DoubleNode<T>? Prev { get; set; }
     public T? Data { get; set; }
-    public DoubleNode<T> Next { get; set; }
+    public DoubleNode<T>? Next { get; set; }
 
 
 }

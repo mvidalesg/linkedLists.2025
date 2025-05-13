@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleList", "DoubleList\DoubleList.csproj", "{0627D543-0339-45FF-BF4F-D1340C3EC8C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleList.UI.Console", "DoubleList.UI.Console\DoubleList.UI.Console.csproj", "{96BF46CD-025F-4E24-B1D6-EE7200626CD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0627D543-0339-45FF-BF4F-D1340C3EC8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0627D543-0339-45FF-BF4F-D1340C3EC8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0627D543-0339-45FF-BF4F-D1340C3EC8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96BF46CD-025F-4E24-B1D6-EE7200626CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96BF46CD-025F-4E24-B1D6-EE7200626CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96BF46CD-025F-4E24-B1D6-EE7200626CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96BF46CD-025F-4E24-B1D6-EE7200626CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

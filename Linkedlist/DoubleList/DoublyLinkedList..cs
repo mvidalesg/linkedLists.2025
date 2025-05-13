@@ -59,7 +59,7 @@ public class DoublyLinkedList<T>
             output += $"{current.Data} <=> ";
             current = current.Next;
         }
-        return output;
+        return output.Substring(0, output.Length - 5); // remove the last " <=> "
     }
 
 
@@ -72,7 +72,7 @@ public class DoublyLinkedList<T>
             output += $"{current.Data} <=> ";
             current = current.Prev;
         }
-        return output;
+        return output.Substring(0, output.Length - 5); // remove the last " <=> "
     }
 }
 
