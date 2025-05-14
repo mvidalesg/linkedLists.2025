@@ -74,6 +74,35 @@ public class DoublyLinkedList<T>
         }
         return output.Substring(0, output.Length - 5); // remove the last " <=> "
     }
-}
 
+    public void Remove(T data) // metodo para limpiar la lista
+    {
+        var current = _head;
+        while (current != null)
+        {
+            if (current.Data!.Equals(data))
+            {
 
+                if (current.Prev != null)
+                {
+                    current.Prev.Next = current.Next;
+                }
+                else
+                {
+                    _head = current.Next; // Update head if removing the first node
+                }
+
+                if (current.Next != null)
+                {
+                    current.Next.Prev = current.Prev;
+                }
+                else
+                {
+                    _tail = current.Prev; // Update tail if removing the last node
+                }
+                break;
+            }
+            current = current.Next;
+        }
+    }
+   }

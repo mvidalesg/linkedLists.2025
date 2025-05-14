@@ -12,18 +12,18 @@ do
     {
         case "1":
             Console.Write("Enter the data to insert at the beginning: ");
-            var data1 = Console.ReadLine();
-            if (data1 != null)
+            var dataAtbeginning = Console.ReadLine();
+            if (dataAtbeginning != null)
             {
-                list.InsertAtBeginning(data1);
+                list.InsertAtBeginning(dataAtbeginning);
             }
             break;
         case "2":
             Console.Write("Enter the data to insert at the end: ");
-            var data2 = Console.ReadLine();
-            if (data2 != null)
+            var dataAtEnd = Console.ReadLine();
+            if (dataAtEnd != null)
             {
-                list.InsertAtEnd(data2);
+                list.InsertAtEnd(dataAtEnd);
             }
             break;
         case "3":
@@ -32,8 +32,17 @@ do
         case "4":
             Console.WriteLine(list.GetBackward());
             break;
-        default:
+        case "5":
+            Console.Write("Enter the data to remove: ");
+            var remove = Console.ReadLine();
+            if (remove != null)
+            {
+                list.Remove(remove);
+                Console.WriteLine("Item remove");
+            }
             break;
+       
+       
     }
 }
     while(opc != "0");
@@ -45,6 +54,7 @@ string Menu()
     Console.WriteLine("2. Insert at end");
     Console.WriteLine("3. Show list forward");
     Console.WriteLine("4. show list backward");
+    Console.WriteLine("5. remove");
     Console.WriteLine("0. Exit");
     Console.Write("choose an option: ");
     return Console.ReadLine() ?? "0";
