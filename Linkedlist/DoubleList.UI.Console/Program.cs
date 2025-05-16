@@ -1,4 +1,5 @@
-﻿using DoubleList;
+﻿using System;
+using DoubleList;
 using System.ComponentModel.Design;
 
 var list = new DoublyLinkedList<string>();
@@ -41,11 +42,11 @@ do
                 Console.WriteLine("Item remove");
             }
             break;
-       
-       
+
+
     }
 }
-    while(opc != "0");
+while (opc != "0");
 
 
 string Menu()
@@ -59,4 +60,3 @@ string Menu()
     Console.Write("choose an option: ");
     return Console.ReadLine() ?? "0";
 }
-    
