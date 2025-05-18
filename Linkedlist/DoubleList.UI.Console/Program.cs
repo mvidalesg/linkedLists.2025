@@ -14,7 +14,7 @@ namespace DoubleList
 
             while (opcion != 0)
             {
-                Console.WriteLine("\nMenú de Lista Doblemente Ligada:");
+                Console.WriteLine("\nMenú de Listas Ligadas:");
                 Console.WriteLine("1. Insert in order //Adicionar elemento (orden ascendente)");
                 Console.WriteLine("2. Show forward //Mostrar hacia adelante");
                 Console.WriteLine("3. Show backward //Mostrar hacia atrás");
