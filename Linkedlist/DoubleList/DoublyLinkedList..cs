@@ -17,7 +17,7 @@ public class DoublyLinkedList<T> where T : IComparable<T>
         _head = null;
     }
 
-    public void InsertInOrder(T data)
+    public void InsertInOrder(T data) // insertar en orden
     {
         DoubleNode<T> newNode = new DoubleNode<T>(data);
 
