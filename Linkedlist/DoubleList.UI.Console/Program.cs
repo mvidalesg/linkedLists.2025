@@ -14,7 +14,7 @@ namespace DoubleList
 
             while (opcion != 0)
             {
-                Console.WriteLine("\nMenú de Listas Ligadas:");
+                Console.WriteLine("\nMenú de Listas Ligada:");
                 Console.WriteLine("1. Insert in order //Adicionar elemento (orden ascendente)");
                 Console.WriteLine("2. Show forward //Mostrar hacia adelante");
                 Console.WriteLine("3. Show backward //Mostrar hacia atrás");
@@ -89,7 +89,7 @@ namespace DoubleList
                             if (!string.IsNullOrEmpty(elementoEliminarUna))
                             {
                                 lista.DeleteOccurrence(elementoEliminarUna);
-                                Console.WriteLine($"Se intentó eliminar una ocurrencia de '{elementoEliminarUna}'.");
+                                Console.WriteLine($"Se elimino una ocurrencia de '{elementoEliminarUna}'.");
                             }
                             else
                             {
@@ -102,7 +102,7 @@ namespace DoubleList
                             if (!string.IsNullOrEmpty(elementoEliminarTodas))
                             {
                                 lista.DeleteAllOccurrence(elementoEliminarTodas);
-                                Console.WriteLine($"Se intentaron eliminar todas las ocurrencias de '{elementoEliminarTodas}'.");
+                                Console.WriteLine($"Se eliminaron todas las ocurrencias de '{elementoEliminarTodas}'.");
                             }
                             else
                             {
